@@ -1,12 +1,15 @@
-//Stampa di una mail in pagina tramite il DOM (in questo caso un "li" vuoto quindi un punto)//
+//Ciclo FOR per 10 email assegnando le email//
 const emailList = document.getElementById('email-list');
+
+for (let i = 0; i < 10; i++){
 
 axios.get('https://flynn.boolean.careers/exercises/api/random/mail')
 .then(response => {
 const email = response.data.response;
 
 const li = document.createElement('li');
-li.innerText == email;
+li.innerText = email;
 
 emailList.appendChild(li);
 });
+}
