@@ -1,6 +1,7 @@
-//Ciclo FOR per 10 email assegnando le email//
+//elemeneti dal dom//
 const emailList = document.getElementById('email-list');
-
+const button = docuument.getElementById('generate');
+//Ciclo FOR per 10 email assegnando le email//
 for (let i = 0; i < 10; i++){
 
 axios.get('https://flynn.boolean.careers/exercises/api/random/mail')
