@@ -1,6 +1,6 @@
 //elemeneti dal dom//
 const emailList = document.getElementById('email-list');
-const button = docuument.getElementById('generate');
+
 
 
 //Ciclo FOR per 10 email assegnando le email//
